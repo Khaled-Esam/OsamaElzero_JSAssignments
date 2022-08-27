@@ -1,0 +1,30 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+form input,
+form select {
+    padding: 10px
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    font-family: arial;
+    font-size: 30px;
+
+}
+
+.results div {
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px
+}

@@ -30,15 +30,15 @@ let arr = Object.keys(myFavGames);
 
 for (let i = 0; i < objectLength; i++) {
   console.log(`The Game Name Is ${arr[i]}`);
-  console.log(`The Publisher Is ${myFavGames[arr[i]]["publisher"]}`);
-  console.log(`The Price Is ${myFavGames[arr[i]]["price"]}`);
+  console.log(`The Publisher Is ${Object.values(myFavGames)[i].publisher}`);
+  console.log(`The Price Is ${Object.values(myFavGames)[i].price}`);
 
   // Check If Nested Object Has Property (bestThree)
   if (myFavGames[arr[i]].bestThree !== undefined) {
     console.log("- Game Has Releases");
-    console.log(`First => ${myFavGames[arr[i]].bestThree.one}`);
-    console.log(`Second => ${myFavGames[arr[i]].bestThree.two}`);
-    console.log(`Third => ${myFavGames[arr[i]].bestThree.three}`);
+    console.log(`First => ${Object.values(myFavGames)[i].bestThree.one}`);
+    console.log(`Second => ${Object.values(myFavGames)[i].bestThree.two}`);
+    console.log(`Third => ${Object.values(myFavGames)[i].bestThree.three}`);
   }
   console.log("#".repeat(20));
 }
