@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    font-family: arial;
+
+}
+
+.box {
+    position: relative;
+    background-color: #eee;
+    padding: 20px 140px;
+    border: 1px solid #ddd;
+    display: none
+}
+
+button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    right: -12.5px;
+    top: -12.5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
