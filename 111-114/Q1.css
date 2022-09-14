@@ -1,0 +1,47 @@
+body {
+    font-size: 16px;
+    color: green
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    margin: 200px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors li {
+    padding: 30px;
+    cursor: pointer;
+}
+.colors li:not(.active) {
+    opacity: 0.6
+}
+.colors li:first-child {
+    background-color: green
+}
+.colors li:nth-child(2) {
+    background-color: blue
+}
+.colors li:nth-child(3) {
+    background-color: black
+}
+.colors li:nth-child(4) {
+    background-color: red
+}
+.colors li:nth-child(5) {
+    background-color: yellow
+}
+.colors li:last-child {
+    background-color: purple
+}
+p {
+    font-weight:  bold;
+    text-align: center;
+}
